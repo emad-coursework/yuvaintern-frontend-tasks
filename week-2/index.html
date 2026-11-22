@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kova Studio — Responsive Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="brand">
+                <span class="brand-mark">K</span>
+                <span>Kova Studio</span>
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#metrics">Impact</a>
+                <a href="#contact" class="btn btn-sm">Start a Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Fluid Multi-Device Engineering</span>
+                    <h1>Interfaces engineered to adapt gracefully to every screen.</h1>
+                    <p class="lead">
+                        From widescreen desktops to compact smartphones, Kova Studio crafts flexible
+                        layouts powered by CSS Grid, fluid typography, and responsive breakpoints.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">Explore Work</a>
+                        <a href="#metrics" class="btn btn-outline">See Benchmarks</a>
+                    </div>
+                </div>
+                <figure class="hero-figure">
+                    <svg viewBox="0 0 420 260" class="fluid-svg" role="img" aria-label="Responsive desktop and mobile layout preview">
+                        <rect x="10" y="16" width="270" height="190" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+                        <rect x="28" y="42" width="120" height="14" rx="4" fill="#2563eb"/>
+                        <rect x="28" y="68" width="234" height="10" rx="4" fill="#e2e8f0"/>
+                        <rect x="28" y="92" width="70" height="90" rx="8" fill="#eff6ff"/>
+                        <rect x="110" y="92" width="70" height="90" rx="8" fill="#eff6ff"/>
+                        <rect x="192" y="92" width="70" height="90" rx="8" fill="#eff6ff"/>
+                        <rect x="296" y="44" width="110" height="196" rx="18" fill="#0f172a"/>
+                        <rect x="308" y="66" width="86" height="152" rx="8" fill="#ffffff"/>
+                        <rect x="318" y="80" width="66" height="10" rx="4" fill="#2563eb"/>
+                        <rect x="318" y="102" width="66" height="44" rx="6" fill="#eff6ff"/>
+                        <rect x="318" y="156" width="66" height="44" rx="6" fill="#f1f5f9"/>
+                    </svg>
+                    <figcaption>Adaptive 3-column desktop grid collapsing smoothly to a 1-column mobile stack.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="metrics" class="metrics-strip">
+            <div class="container metrics-grid">
+                <div class="metric-item">
+                    <strong>100%</strong>
+                    <span>Fluid Grid Coverage</span>
+                </div>
+                <div class="metric-item">
+                    <strong>3</strong>
+                    <span>Viewport Breakpoints</span>
+                </div>
+                <div class="metric-item">
+                    <strong>0px</strong>
+                    <span>Horizontal Overflow</span>
+                </div>
+                <div class="metric-item">
+                    <strong>&lt; 1s</strong>
+                    <span>Mobile First Paint</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Capabilities</span>
+                    <h2>Built for every viewport</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-index">01</span>
+                        <h3>Flexible CSS Grids</h3>
+                        <p>Auto-fitting tracks and fractional units eliminate brittle fixed-pixel layouts.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-index">02</span>
+                        <h3>Fluid Typography</h3>
+                        <p>Type scales smoothly with <code>clamp()</code> so headings stay legible on phones and 4K displays.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-index">03</span>
+                        <h3>Touch-First Spacing</h3>
+                        <p>Generous tap targets and stacked action buttons keep mobile navigation effortless.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section section-muted">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Selected Work</span>
+                    <h2>Responsive case studies</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="work-card">
+                        <div class="work-thumb thumb-blue">Meridian Cloud</div>
+                        <div class="work-body">
+                            <span class="tag">Desktop &middot; Tablet &middot; Mobile</span>
+                            <h3>Meridian Analytics</h3>
+                            <p>Adaptive data cards and stacked charts built for engineers on the move.</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-thumb thumb-slate">Northline</div>
+                        <div class="work-body">
+                            <span class="tag">Mobile-First Web App</span>
+                            <h3>Northline Freight</h3>
+                            <p>Field-ready shipment tracker optimized for one-handed smartphone usage.</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-thumb thumb-teal">Sora Health</div>
+                        <div class="work-body">
+                            <span class="tag">Fluid Design System</span>
+                            <h3>Sora Patient Portal</h3>
+                            <p>Responsive appointment scheduling across clinic kiosks and mobile browsers.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Kova Studio</strong>
+                <p>hello@kovastudio.dev &middot; Responsive Web Design Edition.</p>
+            </div>
+            <p class="copyright">&copy; 2026 Kova Studio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
